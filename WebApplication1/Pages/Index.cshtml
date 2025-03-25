@@ -3,8 +3,13 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
+<script>
+    function changeColor() {
+    document.getElementById("text").style.color = "red";
+    }
+</script>
 <div class="text-center">
     <h1 class="display-4">Welcome Stefano</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <button onclick="changeColor()">Change Color</button>
+    <p id="text">Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
